@@ -3,14 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="viewModel"
-            type="com.example.mvpview_base_kotlin.viewmodel.ExampleViewModel" />
-
-        <import type="android.view.View" />
-    </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,7 +12,6 @@
             android:id="@+id/progressBar"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:visibility="@{viewModel.loadingVisibility}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,8 +23,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@{viewModel.message}"
-            android:visibility="@{viewModel.textVisibility}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +34,6 @@
             android:id="@+id/appCompatImageView"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:visibility="@{viewModel.onReloadVisibility}"
             android:src="@drawable/ic_try_again"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

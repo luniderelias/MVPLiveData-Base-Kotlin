@@ -1,9 +1,9 @@
-package com.example.mvpview_base_kotlin.main
+package com.example.mvp_livedata_base_kotlin.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mvpview_base_kotlin.R
-import com.example.mvpview_base_kotlin.base.extensions.addFragmentTo
+import com.example.mvp_livedata_base_kotlin.R
+import com.example.mvp_livedata_base_kotlin.base.extensions.addFragmentTo
 
 class MainActivity : AppCompatActivity() {
 

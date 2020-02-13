@@ -1,10 +1,11 @@
-package com.example.mvpview_base_kotlin.data
+package com.example.mvp_livedata_base_kotlin.data
 
 class ExampleRepositoryMock : ExampleRepository {
 
     private var flag = false
 
-    override fun getExample(): ExampleData {
+    override suspend fun getExample(): ExampleData {
+        Thread.sleep(1000)
         flag = !flag
         return if (flag)
             ExampleData(message = "Hello World!")

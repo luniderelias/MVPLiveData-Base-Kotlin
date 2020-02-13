@@ -1,9 +1,9 @@
-package com.example.mvpview_base_kotlin.base.extensions
+package com.example.mvp_livedata_base_kotlin.base.extensions
 
 
 import android.content.ComponentCallbacks
-import com.example.mvpview_base_kotlin.base.BasePresenter
-import com.example.mvpview_base_kotlin.base.BaseView
+import com.example.mvp_livedata_base_kotlin.base.BasePresenter
+import com.example.mvp_livedata_base_kotlin.base.BaseView
 import org.koin.android.ext.android.get
 import org.koin.core.parameter.parametersOf
 import org.koin.core.scope.Scope

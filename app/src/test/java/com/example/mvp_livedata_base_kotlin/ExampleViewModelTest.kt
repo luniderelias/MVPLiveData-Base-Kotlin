@@ -1,13 +1,13 @@
-package com.example.mvpview_base_kotlin
+package com.example.mvp_livedata_base_kotlin
 
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.example.mvpview_base_kotlin.data.ExampleData
-import com.example.mvpview_base_kotlin.data.ExampleRepositoryMock
-import com.example.mvpview_base_kotlin.main.MainPresenter
-import com.example.mvpview_base_kotlin.viewmodel.ExampleViewModel
+import com.example.mvp_livedata_base_kotlin.data.ExampleData
+import com.example.mvp_livedata_base_kotlin.data.ExampleRepositoryMock
+import com.example.mvp_livedata_base_kotlin.main.MainPresenter
+import com.example.mvp_livedata_base_kotlin.viewmodel.ExampleViewModel
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.times
 import com.nhaarman.mockitokotlin2.verify
