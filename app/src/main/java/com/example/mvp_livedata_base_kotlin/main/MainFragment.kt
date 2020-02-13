@@ -1,7 +1,6 @@
 package com.example.mvp_livedata_base_kotlin.main
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
 import com.example.mvp_livedata_base_kotlin.R
@@ -36,7 +35,6 @@ class MainFragment : BaseFragment(), MainContract.View {
     }
 
     override fun initPresenter() {
-        handleMessageVisibility(shouldShow = false)
         presenter.init()
     }
 
@@ -45,14 +43,12 @@ class MainFragment : BaseFragment(), MainContract.View {
             Observer { response ->
                 response?.let {
                     view?.messageTextView?.text = it.message
-                    handleMessageVisibility(shouldShow = true)
                 }
             }
         )
     }
 
     override fun onReload() {
-        handleMessageVisibility(shouldShow = false)
         presenter.loadData()
     }
 

@@ -54,4 +54,5 @@ dependencies {
     testImplementation "org.koin:koin-test:$v.koin"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$v.mockito_kotlin"
     testImplementation 'android.arch.core:core-testing:1.1.1'
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$v.coroutines"
 }
